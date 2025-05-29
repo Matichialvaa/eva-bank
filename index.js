@@ -10,8 +10,9 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
-const TRANSFER_SUCCESS_RATE = 0.9;
-const DEBIN_APPROVAL_RATE = 0.8;
+// Set to 100% success rate for testing
+const TRANSFER_SUCCESS_RATE = 1.0;
+const DEBIN_APPROVAL_RATE = 1.0;
 
 app.post('/api/transfer', (req, res) => {
   const { amount, toWalletId, source } = req.body;
