@@ -16,7 +16,7 @@ const TRANSFER_SUCCESS_RATE = 1.0;
 const DEBIN_APPROVAL_RATE = 1.0;
 
 // Wall-E backend URL
-const WALLE_BACKEND_URL = process.env.WALLE_BACKEND_URL || 'http://walle-app:3000';
+const WALLE_BACKEND_URL = process.env.WALLE_BACKEND_URL || 'http://localhost:3000';
 
 app.post('/api/transfer', async (req, res) => {
   const { amount, alias, source } = req.body;
